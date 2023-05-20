@@ -7,13 +7,13 @@ income = float(input("Enter the amount of income: "))
 expenditures = float(input("Enter the number of outflows: "))
 total = income-expenditures
 
-if total >= 0:
+if total < 2000:
     print("You should strive to work harder")
 
-elif total >= 2001 and income <= 3000:
+elif total in range (2001,2999):
     print("Regularly well")
 
-elif total >= 3001:
+elif total >= 3000:
     print("Has a good financial status")
 
 else:
